@@ -54,15 +54,26 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
+	const Bar = __webpack_require__(1);
+	const Doughnut = __webpack_require__(14);
+	const Line = __webpack_require__(15);
+	const Pie = __webpack_require__(16);
+	const PolarArea = __webpack_require__(17);
+	const Radar = __webpack_require__(18);
+	const createClass = __webpack_require__(2).createClass;
+
 	module.exports = {
-	  Bar: __webpack_require__(1),
-	  Doughnut: __webpack_require__(14),
-	  Line: __webpack_require__(15),
-	  Pie: __webpack_require__(16),
-	  PolarArea: __webpack_require__(17),
-	  Radar: __webpack_require__(18),
-	  createClass: __webpack_require__(2).createClass
+	  Bar,
+	  Doughnut,
+	  Line,
+	  Pie,
+	  PolarArea,
+	  Radar,
+	  createClass,
 	};
+
+	export { Bar, Doughnut, Line, Pie, PolarArea, Radar };
+
 
 
 /***/ }),

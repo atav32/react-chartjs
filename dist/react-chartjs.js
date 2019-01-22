@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define(["react", "react-dom", "Chartjs"], factory);
 	else if(typeof exports === 'object')
-		exports["react-chartjs"] = factory(require("react"), require("react-dom"), require("Chartjs"));
+		exports["ReactChartJs"] = factory(require("react"), require("react-dom"), require("Chartjs"));
 	else
-		root["react-chartjs"] = factory(root["React"], root["ReactDOM"], root["Chart"]);
+		root["ReactChartJs"] = factory(root["React"], root["ReactDOM"], root["Chart"]);
 })(this, function(__WEBPACK_EXTERNAL_MODULE_3__, __WEBPACK_EXTERNAL_MODULE_12__, __WEBPACK_EXTERNAL_MODULE_13__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -54,15 +54,26 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
+	const Bar = __webpack_require__(1);
+	const Doughnut = __webpack_require__(14);
+	const Line = __webpack_require__(15);
+	const Pie = __webpack_require__(16);
+	const PolarArea = __webpack_require__(17);
+	const Radar = __webpack_require__(18);
+	const createClass = __webpack_require__(2).createClass;
+
 	module.exports = {
-	  Bar: __webpack_require__(1),
-	  Doughnut: __webpack_require__(14),
-	  Line: __webpack_require__(15),
-	  Pie: __webpack_require__(16),
-	  PolarArea: __webpack_require__(17),
-	  Radar: __webpack_require__(18),
-	  createClass: __webpack_require__(2).createClass
+	  Bar,
+	  Doughnut,
+	  Line,
+	  Pie,
+	  PolarArea,
+	  Radar,
+	  createClass,
 	};
+
+	export { Bar, Doughnut, Line, Pie, PolarArea, Radar };
+
 
 
 /***/ }),

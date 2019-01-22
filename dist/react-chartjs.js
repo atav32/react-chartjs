@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define(["react", "react-dom", "Chartjs"], factory);
 	else if(typeof exports === 'object')
-		exports["react-chartjs"] = factory(require("react"), require("react-dom"), require("Chartjs"));
+		exports["ReactChartJs"] = factory(require("react"), require("react-dom"), require("Chartjs"));
 	else
-		root["react-chartjs"] = factory(root["React"], root["ReactDOM"], root["Chart"]);
+		root["ReactChartJs"] = factory(root["React"], root["ReactDOM"], root["Chart"]);
 })(this, function(__WEBPACK_EXTERNAL_MODULE_3__, __WEBPACK_EXTERNAL_MODULE_12__, __WEBPACK_EXTERNAL_MODULE_13__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache

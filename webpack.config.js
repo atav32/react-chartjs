@@ -13,7 +13,7 @@ if (process.env.COMPRESS) {
 
 module.exports = {
   output: {
-    library: 'react-chartjs',
+    library: 'ReactChartJs',
     libraryTarget: 'umd'
   },
   externals: [{
